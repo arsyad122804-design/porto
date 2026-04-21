@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080810"/>
+      <stop offset="100%" style="stop-color:#1a1a2e"/>
+    </linearGradient>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6c63ff"/>
+      <stop offset="100%" style="stop-color:#f093fb"/>
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00f2fe"/>
+      <stop offset="100%" style="stop-color:#6c63ff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Grid pattern -->
+  <defs>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(108,99,255,0.06)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Blobs -->
+  <circle cx="1050" cy="100" r="280" fill="#6c63ff" opacity="0.07"/>
+  <circle cx="150" cy="530" r="200" fill="#f093fb" opacity="0.06"/>
+
+  <!-- Left accent line -->
+  <rect x="80" y="80" width="4" height="470" rx="2" fill="url(#grad)"/>
+
+  <!-- Logo -->
+  <rect x="110" y="80" width="120" height="44" rx="10" fill="rgba(108,99,255,0.15)"/>
+  <text x="170" y="110" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="900" fill="url(#grad)" text-anchor="middle">MFA.</text>
+
+  <!-- Main name -->
+  <text x="110" y="230" font-family="Inter, Arial, sans-serif" font-size="68" font-weight="900" fill="white">Muhammad Fikri</text>
+  <text x="110" y="310" font-family="Inter, Arial, sans-serif" font-size="68" font-weight="900" fill="url(#grad)">Arsyad</text>
+
+  <!-- Role tags -->
+  <rect x="110" y="345" width="180" height="36" rx="18" fill="rgba(108,99,255,0.2)"/>
+  <text x="200" y="368" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600" fill="#a89cff" text-anchor="middle">AI Enthusiast</text>
+
+  <rect x="304" y="345" width="190" height="36" rx="18" fill="rgba(240,147,251,0.15)"/>
+  <text x="399" y="368" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600" fill="#f093fb" text-anchor="middle">UI/UX Designer</text>
+
+  <rect x="508" y="345" width="200" height="36" rx="18" fill="rgba(0,242,254,0.1)"/>
+  <text x="608" y="368" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600" fill="#00f2fe" text-anchor="middle">Web Developer</text>
+
+  <!-- Description -->
+  <text x="110" y="430" font-family="Inter, Arial, sans-serif" font-size="20" fill="#94a3b8">Passionate di bidang AI, UI/UX Design, Web Development &amp; Trading</text>
+
+  <!-- Contact info -->
+  <text x="110" y="490" font-family="Inter, Arial, sans-serif" font-size="16" fill="#64748b">arsyad122804@gmail.com  ·  081949514329  ·  @fikri_arsyad2004</text>
+
+  <!-- Right side avatar placeholder -->
+  <circle cx="980" cy="315" r="200" fill="rgba(108,99,255,0.08)" stroke="url(#grad)" stroke-width="2"/>
+  <circle cx="980" cy="315" r="170" fill="rgba(108,99,255,0.05)" stroke="rgba(240,147,251,0.2)" stroke-width="1" stroke-dasharray="8 4"/>
+  <text x="980" y="340" font-family="Inter, Arial, sans-serif" font-size="80" font-weight="900" fill="url(#grad)" text-anchor="middle">MFA</text>
+
+  <!-- Bottom border -->
+  <rect x="0" y="610" width="1200" height="4" rx="2" fill="url(#grad)"/>
+</svg>

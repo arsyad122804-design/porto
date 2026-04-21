@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muhammad Fikri Arsyad — Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg"/>
+  <meta property="og:title" content="Muhammad Fikri Arsyad — Portfolio"/>
+  <meta property="og:description" content="AI Enthusiast, UI/UX Designer & Web Developer"/>
+  <meta property="og:image" content="assets/og-image.svg"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">MFA<span>.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Pengalaman</a></li>
+        <li><a href="#hobi">Hobi</a></li>
+        <li><a href="#projects">Proyek</a></li>
+        <li><a href="#education">Pendidikan</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+      <a href="#contact" class="btn-nav">Hire Me</a>
+      <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-bg">
+      <div class="blob blob1"></div>
+      <div class="blob blob2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting">👋 Halo, perkenalkan saya</p>
+        <h1 class="hero-name">Muhammad Fikri <span>Arsyad</span></h1>
+        <div class="hero-role">
+          <span id="roleText">AI Enthusiast</span><span class="cursor">|</span>
+        </div>
+        <p class="hero-desc">Seorang pemuda 22 tahun yang passionate di bidang AI, UI/UX Design, Web Development, dan Trading. Siap berkontribusi dan terus berkembang dalam dunia teknologi.</p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary">Lihat Proyek <i class="fas fa-arrow-right"></i></a>
+          <a href="#contact" class="btn-secondary"><i class="fas fa-envelope"></i> Hubungi Saya</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num">2</span><span class="stat-label">Proyek Selesai</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">22</span><span class="stat-label">Tahun</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Keahlian</span></div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-wrapper">
+          <div class="image-ring ring1"></div>
+          <div class="image-ring ring2"></div>
+          <img src="assets/ChatGPT Image Apr 20, 2026, 07_51_33 PM.png" alt="Muhammad Fikri Arsyad" class="profile-avatar-img"/>
+          <div class="badge badge1"><i class="fas fa-robot"></i> AI</div>
+          <div class="badge badge2"><i class="fas fa-chart-line"></i> Trading</div>
+          <div class="badge badge3"><i class="fas fa-palette"></i> UI/UX</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <canvas class="section-canvas" id="aboutCanvas"></canvas>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Tentang Saya</span>
+        <h2>Siapa <span>Saya?</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-avatar-col">
+          <div class="about-avatar-wrap">
+            <div class="about-avatar-circle">
+              <img src="assets/ChatGPT Image Apr 20, 2026, 07_51_33 PM.png" alt="Muhammad Fikri Arsyad" style="width:100%;height:100%;border-radius:50%;object-fit:cover;object-position:top;"/>
+            </div>
+            <div class="about-location-badge"><i class="fas fa-map-marker-alt"></i> Indonesia</div>
+          </div>
+        </div>
+        <div class="about-text-col">
+          <h3>AI Enthusiast & UI/UX Designer</h3>
+          <p>Saya adalah <strong>Muhammad Fikri Arsyad</strong>, pemuda berusia 22 tahun yang memiliki ketertarikan besar di bidang <strong>Kecerdasan Buatan (AI)</strong>, desain antarmuka, pengembangan web, dan dunia trading.</p>
+          <p>Dengan latar belakang pendidikan di <strong>Academy Dakwah Indonesia</strong> dan <strong>Elfan AI Academy</strong>, saya terus mengasah kemampuan teknis dan kreatif untuk menciptakan solusi digital yang bermakna.</p>
+          <p>Saya percaya bahwa teknologi adalah alat untuk memberi dampak positif bagi masyarakat, dan saya siap berkontribusi penuh dalam tim yang dinamis dan inovatif.</p>
+          <div class="about-info-grid">
+            <div class="info-item"><i class="fas fa-user"></i><div><span>Nama</span><strong>Muhammad Fikri Arsyad</strong></div></div>
+            <div class="info-item"><i class="fas fa-birthday-cake"></i><div><span>Umur</span><strong>22 Tahun</strong></div></div>
+            <div class="info-item"><i class="fas fa-envelope"></i><div><span>Email</span><strong>arsyad122804@gmail.com</strong></div></div>
+            <div class="info-item"><i class="fas fa-phone"></i><div><span>WhatsApp</span><strong>081949514329</strong></div></div>
+            <div class="info-item"><i class="fas fa-map-marker-alt"></i><div><span>Lokasi</span><strong>Indonesia</strong></div></div>
+            <div class="info-item"><i class="fas fa-briefcase"></i><div><span>Status</span><strong class="available">Siap Bekerja</strong></div></div>
+          </div>
+          <div class="about-btns">
+            <a href="#contact" class="btn-primary">Hubungi Saya</a>
+            <a href="#skills" class="btn-outline">Lihat Keahlian</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <canvas class="section-canvas" id="skillsCanvas"></canvas>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Keahlian</span>
+        <h2>Apa yang Saya <span>Kuasai</span></h2>
+      </div>
+      <div class="skills-bars">
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span><i class="fas fa-robot"></i> Artificial Intelligence (AI)</span>
+            <div class="skill-bar-right"><span class="skill-level menengah">Menengah</span><span>80%</span></div>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+          <div class="skill-level-dots">
+            <span class="dot active" title="Pemula">Pemula</span>
+            <span class="dot active" title="Menengah">Menengah</span>
+            <span class="dot" title="Ahli">Ahli</span>
+          </div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span><i class="fas fa-chart-line"></i> Trading</span>
+            <div class="skill-bar-right"><span class="skill-level ahli">Ahli</span><span>85%</span></div>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+          <div class="skill-level-dots">
+            <span class="dot active">Pemula</span>
+            <span class="dot active">Menengah</span>
+            <span class="dot active">Ahli</span>
+          </div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span><i class="fas fa-code"></i> Web Development</span>
+            <div class="skill-bar-right"><span class="skill-level menengah">Menengah</span><span>80%</span></div>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+          <div class="skill-level-dots">
+            <span class="dot active">Pemula</span>
+            <span class="dot active">Menengah</span>
+            <span class="dot">Ahli</span>
+          </div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span><i class="fas fa-palette"></i> UI/UX Design</span>
+            <div class="skill-bar-right"><span class="skill-level menengah">Menengah</span><span>70%</span></div>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div>
+          <div class="skill-level-dots">
+            <span class="dot active">Pemula</span>
+            <span class="dot active">Menengah</span>
+            <span class="dot">Ahli</span>
+          </div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span><i class="fas fa-pen-nib"></i> Graphic Design</span>
+            <div class="skill-bar-right"><span class="skill-level menengah">Menengah</span><span>70%</span></div>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div>
+          <div class="skill-level-dots">
+            <span class="dot active">Pemula</span>
+            <span class="dot active">Menengah</span>
+            <span class="dot">Ahli</span>
+          </div>
+        </div>
+      </div>
+      <div class="skills-cards">
+        <div class="skill-card">
+          <div class="skill-card-icon"><i class="fas fa-robot"></i></div>
+          <h4>Artificial Intelligence</h4>
+          <p>Pemahaman mendalam tentang konsep AI, machine learning, dan penerapannya dalam solusi digital modern.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-icon"><i class="fas fa-chart-line"></i></div>
+          <h4>Trading & Analisis</h4>
+          <p>Kemampuan analisis pasar, membaca chart, dan strategi trading yang terukur dan disiplin.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-icon"><i class="fas fa-code"></i></div>
+          <h4>Web Development</h4>
+          <p>Membangun website yang responsif, modern, dan fungsional menggunakan teknologi terkini.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-icon"><i class="fas fa-palette"></i></div>
+          <h4>UI/UX Design</h4>
+          <p>Merancang antarmuka yang intuitif, estetis, dan berpusat pada pengalaman pengguna.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="experience" id="experience">
+    <canvas class="section-canvas" id="expCanvas"></canvas>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Pengalaman</span>
+        <h2>Organisasi & <span>Pengabdian</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h4>Anggota Divisi Kebersihan</h4>
+                <p class="company"><i class="fas fa-mosque"></i> Organisasi ISMI — Pondok Pesantren</p>
+              </div>
+              <span class="timeline-date">Aktif</span>
+            </div>
+            <p class="timeline-desc">Bertanggung jawab menjaga kebersihan dan kerapian lingkungan pondok pesantren. Melatih kedisiplinan, kerja sama tim, dan rasa tanggung jawab terhadap lingkungan bersama.</p>
+            <div class="timeline-tags"><span>Organisasi</span><span>Kepemimpinan</span><span>Teamwork</span></div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h4>Kasir Kantin</h4>
+                <p class="company"><i class="fas fa-store"></i> Pengabdian — Pondok Pesantren</p>
+              </div>
+              <span class="timeline-date">Aktif</span>
+            </div>
+            <p class="timeline-desc">Mengelola transaksi keuangan harian di kantin pondok. Melatih kemampuan manajemen keuangan, ketelitian, dan pelayanan kepada santri.</p>
+            <div class="timeline-tags"><span>Manajemen Keuangan</span><span>Pelayanan</span><span>Ketelitian</span></div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h4>Pengisian Air Mineral</h4>
+                <p class="company"><i class="fas fa-tint"></i> Pengabdian — Pondok Pesantren</p>
+              </div>
+              <span class="timeline-date">Aktif</span>
+            </div>
+            <p class="timeline-desc">Memastikan ketersediaan air mineral bagi seluruh santri pondok. Melatih kedisiplinan, konsistensi, dan dedikasi dalam melayani kebutuhan komunitas.</p>
+            <div class="timeline-tags"><span>Dedikasi</span><span>Konsistensi</span><span>Pelayanan</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOBI -->
+  <section class="hobi" id="hobi">
+    <canvas class="section-canvas" id="hobiCanvas"></canvas>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Hobi</span>
+        <h2>Aktivitas yang Saya <span>Gemari</span></h2>
+      </div>
+      <div class="hobi-grid">
+        <div class="hobi-card">
+          <div class="hobi-icon"><i class="fas fa-chart-line"></i></div>
+          <h4>Trading</h4>
+          <p>Menganalisis pergerakan pasar dan mengembangkan strategi investasi yang terukur dan disiplin.</p>
+        </div>
+        <div class="hobi-card">
+          <div class="hobi-icon"><i class="fas fa-basketball-ball"></i></div>
+          <h4>Basket</h4>
+          <p>Olahraga basket melatih kerja sama tim, strategi, dan ketahanan fisik yang mendukung produktivitas.</p>
+        </div>
+        <div class="hobi-card">
+          <div class="hobi-icon"><i class="fas fa-fist-raised"></i></div>
+          <h4>Beladiri</h4>
+          <p>Melatih kedisiplinan mental dan fisik melalui seni beladiri yang membangun karakter kuat.</p>
+        </div>
+        <div class="hobi-card">
+          <div class="hobi-icon"><i class="fas fa-laptop-code"></i></div>
+          <h4>IT & Teknologi</h4>
+          <p>Selalu mengikuti perkembangan teknologi terbaru, eksplorasi tools baru, dan belajar hal-hal teknis.</p>
+        </div>
+        <div class="hobi-card">
+          <div class="hobi-icon"><i class="fas fa-book-open"></i></div>
+          <h4>Membaca</h4>
+          <p>Membaca buku pengembangan diri, teknologi, dan bisnis untuk terus memperluas wawasan.</p>
+        </div>
+        <div class="hobi-card">
+          <div class="hobi-icon"><i class="fas fa-gamepad"></i></div>
+          <h4>Gaming</h4>
+          <p>Bermain game melatih kemampuan berpikir strategis, refleks, dan problem solving secara menyenangkan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <canvas class="section-canvas" id="projectsCanvas"></canvas>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Proyek</span>
+        <h2>Karya yang Pernah <span>Saya Buat</span></h2>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-img project-img-cover">
+            <img src="assets/web-pertanian.png" alt="Portal Pertanian" class="project-screenshot"/>
+            <span class="project-badge">Web App</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>Web Development</span><span>UI/UX</span><span>Design</span></div>
+            <h4>Portal Pertanian</h4>
+            <p>Platform pertanian digital terlengkap untuk petani Indonesia — berita terkini, harga pasar real-time, panduan bertani, diagnosa tanaman, marketplace, dan komunitas petani.</p>
+            <div class="project-features">
+              <span><i class="fas fa-check"></i> Berita Pertanian</span>
+              <span><i class="fas fa-check"></i> Marketplace</span>
+              <span><i class="fas fa-check"></i> Forum Komunitas</span>
+              <span><i class="fas fa-check"></i> Keuangan Tani</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img project-img-cover">
+            <img src="assets/Screenshot 2026-04-21 101415.png" alt="CCTV Solo" class="project-screenshot"/>
+            <span class="project-badge">Landing Page</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>Web Development</span><span>UI/UX</span><span>Design</span></div>
+            <h4>CCTV Solo</h4>
+            <p>Website profesional untuk jasa pemasangan CCTV di Solo Raya. Melayani pemasangan untuk rumah, kantor, pabrik, gudang, dan sekolah di Solo, Sukoharjo, Karanganyar, Boyolali, Klaten, Sragen, dan Wonogiri.</p>
+            <div class="project-features">
+              <span><i class="fas fa-check"></i> Landing Page Modern</span>
+              <span><i class="fas fa-check"></i> Fitur AI Detection</span>
+              <span><i class="fas fa-check"></i> Integrasi WhatsApp</span>
+              <span><i class="fas fa-check"></i> Responsive Design</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img project-img-cover">
+            <img src="assets/Screenshot 2026-04-21 102145.png" alt="WEBKITA" class="project-screenshot"/>
+            <span class="project-badge">Jasa Web</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>Web Development</span><span>UI/UX</span><span>Branding</span></div>
+            <h4>WEBKITA — Jasa Pembuatan Website</h4>
+            <p>Layanan jasa pembuatan website profesional, cepat, dan terjangkau. Menyediakan berbagai paket mulai dari landing page, company profile, hingga toko online dengan harga mulai Rp 75K.</p>
+            <div class="project-features">
+              <span><i class="fas fa-check"></i> Website 1 Hari Jadi</span>
+              <span><i class="fas fa-check"></i> Harga Terjangkau</span>
+              <span><i class="fas fa-check"></i> Desain Modern</span>
+              <span><i class="fas fa-check"></i> Berbagai Paket</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="education" id="education">
+    <canvas class="section-canvas" id="eduCanvas"></canvas>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Pendidikan</span>
+        <h2>Riwayat <span>Pendidikan</span></h2>
+      </div>
+      <div class="edu-timeline">
+        <div class="edu-item">
+          <div class="edu-dot"></div>
+          <div class="edu-card">
+            <span class="edu-year">Terkini</span>
+            <h4>Elfan AI Academy</h4>
+            <p class="edu-school">Program intensif kecerdasan buatan dan teknologi masa depan</p>
+            <p>Mempelajari konsep AI, machine learning, dan implementasi teknologi AI dalam kehidupan nyata.</p>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-dot"></div>
+          <div class="edu-card">
+            <span class="edu-year">Terkini</span>
+            <h4>Academy Dakwah Indonesia (ADI)</h4>
+            <p class="edu-school">Program pengembangan karakter dan kepemimpinan berbasis nilai</p>
+            <p>Membangun fondasi karakter, kepemimpinan, dan kemampuan komunikasi yang kuat.</p>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-dot"></div>
+          <div class="edu-card">
+            <span class="edu-year">SMA</span>
+            <h4>SMA Elkisi</h4>
+            <p class="edu-school">Sekolah Menengah Atas</p>
+            <p>Menyelesaikan pendidikan menengah atas dengan aktif dalam kegiatan organisasi dan pengembangan diri.</p>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-dot"></div>
+          <div class="edu-card">
+            <span class="edu-year">SMP</span>
+            <h4>SMP Al Anwar</h4>
+            <p class="edu-school">Sekolah Menengah Pertama berbasis pesantren</p>
+            <p>Pendidikan berbasis pesantren yang membangun disiplin, akhlak, dan ilmu pengetahuan secara seimbang.</p>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-dot"></div>
+          <div class="edu-card">
+            <span class="edu-year">SD</span>
+            <h4>SD Putra Darma & SDN Jatijejer</h4>
+            <p class="edu-school">Sekolah Dasar</p>
+            <p>Fondasi pendidikan dasar yang membentuk karakter dan semangat belajar sejak dini.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <canvas class="section-canvas" id="contactCanvas"></canvas>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Kontak</span>
+        <h2>Mari <span>Terhubung</span></h2>
+        <p class="section-desc">Tertarik untuk bekerja sama atau punya peluang menarik? Jangan ragu untuk menghubungi saya!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Informasi Kontak</h3>
+          <p>Saya terbuka untuk peluang kerja, kolaborasi proyek, maupun diskusi seputar teknologi dan bisnis.</p>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div><h5>Email</h5><p>arsyad122804@gmail.com</p></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+            <div><h5>WhatsApp</h5><p>081949514329</p></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-instagram"></i></div>
+            <div><h5>Instagram</h5><p>@fikri_arsyad2004</p></div>
+          </div>
+          <div class="contact-social">
+            <a href="https://instagram.com/fikri_arsyad2004" target="_blank" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:arsyad122804@gmail.com" class="social-btn email"><i class="fas fa-envelope"></i></a>
+            <a href="https://wa.me/6281949514329" target="_blank" class="social-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Nama Lengkap</label>
+              <input type="text" placeholder="Nama Anda" required/>
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="email@anda.com" required/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Subjek</label>
+            <input type="text" placeholder="Peluang Kerja / Kolaborasi Proyek" required/>
+          </div>
+          <div class="form-group">
+            <label>Pesan</label>
+            <textarea rows="5" placeholder="Ceritakan kebutuhan atau peluang yang ingin Anda diskusikan..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full">Kirim Pesan <i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#home" class="footer-logo">MFA<span>.</span></a>
+        <p>Muhammad Fikri Arsyad — AI Enthusiast, UI/UX Designer & Web Developer</p>
+        <div class="footer-social">
+          <a href="https://instagram.com/fikri_arsyad2004" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:arsyad122804@gmail.com"><i class="fas fa-envelope"></i></a>
+          <a href="https://wa.me/6281949514329" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Muhammad Fikri Arsyad. Dibuat dengan <i class="fas fa-heart"></i> dan semangat belajar.</p>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Proyek</a>
+          <a href="#contact">Kontak</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+  <script src="script.js"></script>
+  <script src="three-scene.js"></script>
+</body>
+</html>

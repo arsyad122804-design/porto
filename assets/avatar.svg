@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#2d2d4e"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6c63ff"/>
+      <stop offset="100%" style="stop-color:#f093fb"/>
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6c63ff;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#f093fb;stop-opacity:0.6"/>
+    </linearGradient>
+    <clipPath id="circle">
+      <circle cx="200" cy="200" r="190"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="200" cy="200" r="200" fill="url(#bgGrad)"/>
+
+  <!-- Decorative rings -->
+  <circle cx="200" cy="200" r="185" fill="none" stroke="url(#ringGrad)" stroke-width="2" stroke-dasharray="12 6"/>
+  <circle cx="200" cy="200" r="170" fill="none" stroke="rgba(108,99,255,0.2)" stroke-width="1"/>
+
+  <!-- Body shape -->
+  <ellipse cx="200" cy="310" rx="110" ry="70" fill="#6c63ff" opacity="0.15"/>
+  <ellipse cx="200" cy="290" rx="90" ry="60" fill="#6c63ff" opacity="0.2"/>
+
+  <!-- Shirt/collar -->
+  <path d="M130 320 Q160 270 200 265 Q240 270 270 320 Q250 340 200 345 Q150 340 130 320Z" fill="#6c63ff" opacity="0.8"/>
+  <path d="M185 265 L200 290 L215 265 Q200 255 185 265Z" fill="#f093fb" opacity="0.9"/>
+
+  <!-- Neck -->
+  <rect x="185" y="230" width="30" height="40" rx="10" fill="#c8a882"/>
+
+  <!-- Head -->
+  <ellipse cx="200" cy="195" rx="65" ry="72" fill="#c8a882"/>
+
+  <!-- Hair -->
+  <ellipse cx="200" cy="140" rx="65" ry="35" fill="#1a0a00"/>
+  <rect x="135" y="140" width="20" height="40" rx="10" fill="#1a0a00"/>
+  <rect x="245" y="140" width="20" height="40" rx="10" fill="#1a0a00"/>
+  <ellipse cx="200" cy="138" rx="62" ry="28" fill="#2d1500"/>
+
+  <!-- Ears -->
+  <ellipse cx="136" cy="200" rx="12" ry="16" fill="#c8a882"/>
+  <ellipse cx="264" cy="200" rx="12" ry="16" fill="#c8a882"/>
+  <ellipse cx="136" cy="200" rx="7" ry="10" fill="#b8987a"/>
+  <ellipse cx="264" cy="200" rx="7" ry="10" fill="#b8987a"/>
+
+  <!-- Eyes -->
+  <ellipse cx="175" cy="195" rx="12" ry="13" fill="white"/>
+  <ellipse cx="225" cy="195" rx="12" ry="13" fill="white"/>
+  <circle cx="177" cy="197" r="8" fill="#2d1500"/>
+  <circle cx="227" cy="197" r="8" fill="#2d1500"/>
+  <circle cx="179" cy="194" r="3" fill="white"/>
+  <circle cx="229" cy="194" r="3" fill="white"/>
+
+  <!-- Eyebrows -->
+  <path d="M163 182 Q175 176 187 180" stroke="#1a0a00" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M213 180 Q225 176 237 182" stroke="#1a0a00" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Nose -->
+  <path d="M196 205 Q200 218 204 205" stroke="#b8987a" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Smile -->
+  <path d="M182 222 Q200 235 218 222" stroke="#8b5e3c" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Glasses -->
+  <rect x="162" y="188" width="28" height="20" rx="8" fill="none" stroke="url(#textGrad)" stroke-width="2.5"/>
+  <rect x="210" y="188" width="28" height="20" rx="8" fill="none" stroke="url(#textGrad)" stroke-width="2.5"/>
+  <line x1="190" y1="198" x2="210" y2="198" stroke="url(#textGrad)" stroke-width="2"/>
+  <line x1="135" y1="196" x2="162" y2="196" stroke="url(#textGrad)" stroke-width="2"/>
+  <line x1="238" y1="196" x2="265" y2="196" stroke="url(#textGrad)" stroke-width="2"/>
+
+  <!-- Border ring -->
+  <circle cx="200" cy="200" r="195" fill="none" stroke="url(#ringGrad)" stroke-width="3"/>
+</svg>

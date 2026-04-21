@@ -1,0 +1,9 @@
+{
+  "name": "portofolio",
+  "version": "1.0.0",
+  "description": "Portfolio website",
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve ."
+  }
+}
